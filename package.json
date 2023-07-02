@@ -6,6 +6,8 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "@nx/eslint-plugin": "^16.4.2",
+    "@nx/linter": "^16.4.2",
     "@nx/nest": "^16.4.2",
     "@nx/react": "^16.4.2",
     "@nx/workspace": "16.4.2",
