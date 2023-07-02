@@ -1,0 +1,15 @@
+# dependencies
+/node_modules
+
+# builds
+/dist
+/build
+/.next
+
+# environment variables
+/.env
+.env.local
+
+# React / React Native
+ios/Pods/
+android/app/build/

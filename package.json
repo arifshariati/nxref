@@ -2,7 +2,9 @@
   "name": "@nxref/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "private": true,
   "dependencies": {},
   "devDependencies": {
@@ -12,7 +14,16 @@
     "@nx/react": "^16.4.2",
     "@nx/storybook": "^16.4.2",
     "@nx/workspace": "16.4.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "nx": "16.4.2",
     "nx-cloud": "latest"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "nx lint",
+      "prettier --write"
+    ],
+    "*.{css,scss,md}": "prettier --write"
   }
 }
